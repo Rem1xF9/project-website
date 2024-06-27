@@ -1,0 +1,145 @@
+body {
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fade-in-image {
+    animation: fadein 2s forwards;
+  }
+
+  .box {
+    background-color: #3498db; /* Цвет фона */
+    transition: transform 0.5s; /* Анимация изменения размера */
+}
+
+.box:hover {
+    transform: scale(1.2); /* Увеличить квадратный блок на 20% при наведении курсора */
+}
+
+
+h3.title-example{
+    font-size: 1em; /* Размер шрифта */
+    color: #ffffff; /* Цвет заголовка */
+    text-align: center; /* Текст по центру */
+}
+/*  CSS код для линии над заголовком */
+h3.title-example:before {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #868686; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 0 auto 10px; /* Отступ с боков по центру и снизу */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h3.title-example:hover:before {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+/*  CSS код для линии под заголовком */
+h3.title-example:after {
+    content: '';
+    display: block;
+    height: 1px; /* Высота линии */
+    background: #868686; /* Цвет линии */
+    width: 150px; /* Ширина линии до наведения */
+    margin: 10px auto 0; /* Отступ с боков по центру и сверху */
+	transition: 1s; /* Время, за которое линия возвращается после наведения */
+}
+h3.title-example:hover:after {
+    width: 250px; /* Ширина линии при наведении */
+	transition: ease-out 1s; /* Время, за которое линия расширяется при наведении */
+}
+     
+
+/* Стилизация элемента <details> */
+details {
+    border: 1px solid #ccc; /* Устанавливаем рамку */
+    border-radius: 8px; /* Закругляем углы */
+    margin-bottom: 10px; /* Добавляем отступ снизу */
+    background-color: #ffffff; /* Цвет фона */
+}
+
+summary {
+    cursor: pointer; /* Делаем курсор указателем при наведении на заголовок */
+    font-weight: bold; /* Делаем текст жирным */
+    padding: 10px; /* Добавляем отступ вокруг содержимого */
+    background-color: #e2e2e2; /* Цвет фона для заголовка */
+    border-top-left-radius: 0px; /* Закругляем верхние углы заголовка */
+    border-top-right-radius: 8px;
+}
+
+/* Стилизация стрелки для элемента <summary> в <details> */
+summary::before {
+
+    padding-right: 5px; /* Отступ от текста заголовка */
+}
+   a {
+    color: blue; /* Синий цвет ссылок */
+    transition: 1s; /* Время изменения */
+   }
+   a:hover {
+    color: red; /* Красный цвет ссылки*/
+   }
+   a {
+    color: rgb(255, 255, 255); /* Синий цвет ссылок */
+    transition: 1s; /* Время изменения */
+   }
+   a:hover {
+    color: rgb(149, 149, 149); /* Красный цвет ссылки*/
+   }
